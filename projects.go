@@ -151,7 +151,7 @@ type ConfigInfo struct {
 	MaxObjectSizeLimit               MaxObjectSizeLimitInfo         `json:"max_object_size_limit"`
 	SubmitType                       string                         `json:"submit_type"`
 	State                            string                         `json:"state,omitempty"`
-	Commentlinks                     map[string]string              `json:"commentlinks"`
+	Commentlinks                     map[string]interface{}         `json:"commentlinks"`
 	Theme                            ThemeInfo                      `json:"theme,omitempty"`
 	PluginConfig                     map[string]ConfigParameterInfo `json:"plugin_config,omitempty"`
 	Actions                          map[string]ActionInfo          `json:"actions,omitempty"`
